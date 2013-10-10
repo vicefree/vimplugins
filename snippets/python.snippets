@@ -4,3 +4,48 @@ snippet pdb
 snippet main
 	if __name__ == "__main__":
 
+snippet cutf8
+	# -*- conding: utf8 -*-
+
+snippet from
+	from ${1:package} import ${2:module}
+
+snippet dowh
+	while True:
+		${1:#TODO: code here...}
+		if ${2:condition}:
+			break
+
+snippet with
+	with ${1:expr} as ${2:var}:
+		${3:#TODO: code here...}
+
+snippet if
+	if ${1:condition}:
+		${2:#TODO: code here...}
+
+snippet ei
+	elif ${1:condition}:
+		${2:#TODO: code here...}
+
+snippet el
+	else:
+		${1:#TODO: code here...}
+
+snippet "
+	"""
+	${1:doc}
+	"""
+
+snippet testcase
+	class ${1:Examplecase}(unittest.TestCase):
+		
+		def test_${2:description}(self):
+			${3:#TODO: code here...}
+
+snippet test
+	def test_${1:description}(self):
+		${2:#TODO: code here...}
+
+
+
