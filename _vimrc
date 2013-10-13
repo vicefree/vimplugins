@@ -123,7 +123,7 @@ map <leader>f :CtrlP<CR>
 map <leader>b :CtrlPBuffer<CR>
 
 " Ack searching
-nmap <leader>a <Esc>:Ack!
+nmap <leader>s <Esc>:Ack!
 
 " Load the Gundo window
 map <leader>g :GundoToggle<CR>
@@ -287,8 +287,8 @@ autocmd FileType html,xhtml,xml,css setlocal expandtab shiftwidth=2 tabstop=2 so
 " Python
 "au BufRead *.py compiler nose
 au FileType python set omnifunc=pythoncomplete#Complete
-au FileType python setlocal expandtab shiftwidth=4 tabstop=8 softtabstop=4 smartindent cinwords=if,elif,else,for,while,try,except,finally,def,class,with
-au FileType coffee setlocal expandtab shiftwidth=4 tabstop=8 softtabstop=4 smartindent cinwords=if,elif,else,for,while,try,except,finally,def,class,with
+au FileType python setlocal expandtab shiftwidth=4 tabstop=4 softtabstop=4 smartindent cinwords=if,elif,else,for,while,try,except,finally,def,class,with
+au FileType coffee setlocal expandtab shiftwidth=4 tabstop=4 softtabstop=4 smartindent cinwords=if,elif,else,for,while,try,except,finally,def,class,with
 au BufRead *.py set efm=%C\ %.%#,%A\ \ File\ \"%f\"\\,\ line\ %l%.%#,%Z%[%^\ ]%\\@=%m
 " Don't let pyflakes use the quickfix window
 let g:pyflakes_use_quickfix = 0
@@ -322,11 +322,12 @@ endif
 " ===========================================================
 " Powerline setting
 " ============================================================
-"set guifont=Source\ Code\ Pro\ for\ Powerline
-" set guifont=PowerlineSymbols\ for\ Powerline
-"set encoding=utf8
+set encoding=utf8
+set guifont=Source\ Code\ Pro\ for\ Powerline
 set t_Co=256
-"let g:Powerline_symbols = 'fancy'
+let g:Powerline_symbols = 'fancy'
+"set fillchars+=stl:\ ,stlnc:\
+"set guifont=PowerlineSymbols\ for\ Powerline
 "set noshowmode
 "let Powerline_symbols = 'compatible' 
 "if has('gui_running')
